@@ -1,0 +1,16 @@
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\bin\Debug\Login Application.exe.config
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application.csprojResolveAssemblyReference.cache
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\MainWindow.g.cs
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\App.g.cs
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application_MarkupCompile.cache
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application_MarkupCompile.lref
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\bin\Debug\Login Application.exe
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\bin\Debug\Login Application.pdb
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Interop.ACTIVEXLib.dll
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application.csproj.ResolveComReference.cache
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\MainWindow.baml
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application.g.resources
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login_Application.Properties.Resources.resources
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application.csproj.GenerateResource.Cache
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application.exe
+c:\users\me\documents\visual studio 2015\Projects\Login Application\Login Application\obj\Debug\Login Application.pdb

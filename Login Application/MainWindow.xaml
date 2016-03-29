@@ -1,0 +1,175 @@
+﻿<Window x:Class="Login_Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Login_Application"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1024" Width="1280">
+        <Window.Resources>
+            <RoutedUICommand x:Key="AltCommandA" />
+        </Window.Resources>
+        <Window.CommandBindings>
+            <CommandBinding Command="{StaticResource AltCommandA}" Executed="Method"/>
+        </Window.CommandBindings>
+        <Window.InputBindings>
+            <KeyBinding Key="A" Modifiers="Alt" Command="{StaticResource AltCommandA}" />
+        </Window.InputBindings>
+        <Grid>
+        <GroupBox Name="Login" Visibility="Hidden"   BorderThickness="0">
+                <Grid>
+                    <StackPanel Margin="10">
+                        <TextBlock FontSize="50"  Text="Welcome to JBSA Lackland Education Office" HorizontalAlignment="Center"/>
+                        <TextBlock FontSize="45"  Text="Please fillout this form and take a seat outside" HorizontalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="cboAppt" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="43" >
+                            <ComboBoxItem Content="Yes" Width="43" HorizontalAlignment="Left" />
+                            <ComboBoxItem Content="No" Width="43" HorizontalAlignment="Left" />
+                        </ComboBox>
+                        <Label Content="Have an appointment?" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="First Name: "/>
+                            <TextBox Name="txtFirstName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+                        </StackPanel>
+                    <StackPanel Orientation="Horizontal" >
+                        <TextBlock Text="Last Name: " />
+                        <TextBox  Name="txtLastName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Margin="1,0,0,0"  VerticalAlignment="Top" Width="120"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"  >
+                            <TextBlock Text="Pay Grade:  " />
+                            <ComboBox x:Name="cboGrade" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="40"  >
+                                <ComboBoxItem Content="E1"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E2"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E3"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E4"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E5"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E6"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E7"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E8"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="E9"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="O1"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="O2"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="O3"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="O4"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="O5"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="O6"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="Mr"  Width="40"  HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="Ms"  Width="40"  HorizontalAlignment="Center" />
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="Branch:       " />
+                            <ComboBox x:Name="cboBranch" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="60" Margin="1,0,0,0" RenderTransformOrigin="0.75,1.273">
+                                <ComboBoxItem  Content="USAF" Width="60" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="USA" Width="60" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="USN" Width="60" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="USMC" Width="60" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="USCG" Width="60" HorizontalAlignment="Center" />
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="Status:        " />
+                            <ComboBox x:Name="cboStatus" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="2,0,0,0" Width="65">
+                                <ComboBoxItem Content="Active" Width="65" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="Guard" Width="65" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="Reserve" Width="65" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="Retired" Width="65" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="APF" Width="65" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="NAF" Width="65" HorizontalAlignment="Center" />
+                                <ComboBoxItem Content="Family" Width="65" HorizontalAlignment="Center" />
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="Email:         " />
+                            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Margin="2,0,0,0" VerticalAlignment="Top" Width="245"/>
+                        </StackPanel>
+
+                        <TextBlock Text="Please check all the reasons for Your visit"/>
+                        <TextBlock Text="(More than one can be selected)"/>
+                        <CheckBox Name="chkInfo" Content="General Info" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <CheckBox Name="chkCCAF" Content="CCAF" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <CheckBox Name="chkCommission" Content="Commission" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <CheckBox Name="chkEdLevel" Content="Ed Level Update" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <CheckBox Name="chkInOut" Content="In / Out Processing" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <CheckBox Name="chkPME" Content="PME" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                        <CheckBox Name="chkTA" Content="TA" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <CheckBox Name="chkVA" Content="VA" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <CheckBox Name="chkAFCOOL" Content="AF COOL" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <CheckBox Name="chkWithdraw" Content="Withdraw / Reimburse" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Button Content="Submit" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="75" Click="Submit"/>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+        <GroupBox Name="Admin"  BorderThickness="0" >
+                <Grid>
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Center" Text="ADMIN" FontSize="40" />
+                        <TextBlock HorizontalAlignment="Center" Text="Alt A to change to login screen" FontSize="30" />
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Admin Intials" />
+                            <TextBox Name="txtIntial" Width="50" Text="" Margin="10,0,50,0"/>
+                            <Button Content="Save to Excel and close" Click="SaveToExcelandClose" />
+                        </StackPanel>
+                    <Grid Margin="6,0,0,0">
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="0" Text="Intial"/>
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="1"  Text="Appt"  />
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="2"  Text="First Name"/>
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="3" Text="Last Name" />
+                        <TextBlock HorizontalAlignment="Left"  Grid.Column="4"  Text="Grade"/>
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="5" Text="Branch" />
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="6" Text="Status" />
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="7" Text="Email" />
+                        <TextBlock HorizontalAlignment="Left" Grid.Column="8" Text="Reasons for Visit" />
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="180" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                        <ListBox Name="lstListPeople" BorderThickness="2" Height="771">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="40" />
+                                            <ColumnDefinition Width="40" />
+                                            <ColumnDefinition Width="80" />
+                                            <ColumnDefinition Width="80" />
+                                            <ColumnDefinition Width="40" />
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="40" />
+                                            <ColumnDefinition Width="180" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0" >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="40" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button HorizontalAlignment="Left" Grid.Column="0"  Visibility="{Binding Vis}" Content="Help"  Click="Help"/>
+                                    <TextBlock  HorizontalAlignment="Left" Grid.Column="0" Visibility="{Binding RVis}" Text="{Binding Helped}"/>
+                                           </Grid>
+                                            <TextBlock HorizontalAlignment="Left" Grid.Column="1"  Text="{Binding Appt}"  />
+                                    <TextBlock HorizontalAlignment="Left" Grid.Column="2"  Text="{Binding FirstName}"/>
+                                    <TextBlock HorizontalAlignment="Left"  Grid.Column="3" Text="{Binding LastName}" />
+                                    <TextBlock HorizontalAlignment="Left" Grid.Column="4"  Text="{Binding Grade}"/>
+                                    <TextBlock HorizontalAlignment="Left" Grid.Column="5" Text="{Binding Branch}" />
+                                    <TextBlock HorizontalAlignment="Left" Grid.Column="6" Text="{Binding Status}" />
+                                    <TextBlock HorizontalAlignment="Left" Grid.Column="7" Text="{Binding Email}" />
+                                    <TextBlock HorizontalAlignment="Left" Grid.Column="8" Text="{Binding Reasons}"/>
+                                </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Window>
+
