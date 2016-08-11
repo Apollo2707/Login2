@@ -29,4 +29,3 @@ C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.g.resources
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login_Application.Properties.Resources.resources
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.csproj.GenerateResource.Cache
-C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.csprojResolveAssemblyReference.cache
