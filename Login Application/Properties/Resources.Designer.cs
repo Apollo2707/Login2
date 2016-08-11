@@ -63,9 +63,9 @@ namespace Login_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] Sign_In {
+        internal static byte[] Sign_In3 {
             get {
-                object obj = ResourceManager.GetObject("Sign_In", resourceCulture);
+                object obj = ResourceManager.GetObject("Sign_In3", resourceCulture);
                 return ((byte[])(obj));
             }
         }

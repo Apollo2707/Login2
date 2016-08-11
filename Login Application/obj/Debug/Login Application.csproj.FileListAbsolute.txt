@@ -21,7 +21,6 @@ C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.pdb
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\bin\Debug\Login Application.exe
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\bin\Debug\Login Application.pdb
-C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.csprojResolveAssemblyReference.cache
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\MainWindow.g.cs
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\App.g.cs
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application_MarkupCompile.cache
@@ -30,3 +29,4 @@ C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.g.resources
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login_Application.Properties.Resources.resources
 C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.csproj.GenerateResource.Cache
+C:\Users\Me\Documents\Visual Studio 2015\Projects\Login Application\Login2\Login Application\obj\Debug\Login Application.csprojResolveAssemblyReference.cache
