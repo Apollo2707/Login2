@@ -28,8 +28,8 @@ namespace Login_Application
         Brush brush;
         List<CheckBox> lstCHK;
 
-        double thisDpiWidthFactor;
-          double  thisDpiHeightFactor;
+       // double thisDpiWidthFactor;
+       //   double  thisDpiHeightFactor;
 
 
         public MainWindow()
@@ -60,12 +60,12 @@ namespace Login_Application
             lstCHK.Add(chkVA);
             lstCHK.Add(chkWithdraw);
 
-            CalculateDpiFactors(this);
-            double ScreenHeight = SystemParameters.PrimaryScreenHeight * thisDpiHeightFactor;
-            double ScreenWidth = SystemParameters.PrimaryScreenWidth * thisDpiWidthFactor;
-            Height = ScreenHeight;
-            Width = ScreenWidth * 2;
-            Login.Width = ScreenWidth;
+            //CalculateDpiFactors(this);
+         ///   double ScreenHeight = SystemParameters.PrimaryScreenHeight * thisDpiHeightFactor;
+         //   double ScreenWidth = SystemParameters.PrimaryScreenWidth * thisDpiWidthFactor;
+         //   Height = ScreenHeight;
+         //   Width = ScreenWidth * 2;
+         //   Login.Width = ScreenWidth;
 
 
 
@@ -264,15 +264,15 @@ namespace Login_Application
 
         }
 
-        private void CalculateDpiFactors(Window t)
-        {
-            Window MainWindow = t;
-            Window ms = new MessageBox();
-            PresentationSource MainWindowPresentationSource = PresentationSource.FromVisual(MainWindow);
-            Matrix m = MainWindowPresentationSource.CompositionTarget.TransformToDevice;
-           thisDpiWidthFactor = m.M11;
-            thisDpiHeightFactor = m.M22;
-        }
+//private void CalculateDpiFactors(Window t)
+      //  {
+      //      Window MainWindow = t;
+      //      Window ms = new MessageBox();
+       //     PresentationSource MainWindowPresentationSource = PresentationSource.FromVisual(MainWindow);
+      //      Matrix m = MainWindowPresentationSource.CompositionTarget.TransformToDevice;
+      //     thisDpiWidthFactor = m.M11;
+      //      thisDpiHeightFactor = m.M22;
+      //  }
 
 
     }
